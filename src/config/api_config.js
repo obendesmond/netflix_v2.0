@@ -5,6 +5,7 @@ const api = {
   popularMovies: "/popular?api_key=",
   topRated: "/top_rated?api_key=",
   upComing: "/upcoming?api_key=",
+  baseImgUrl: "https://image.tmdb.org/t/p/w500",
 };
 
 export default api;
