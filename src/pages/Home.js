@@ -7,12 +7,13 @@ import SecondSection from "../components/SecondSection";
 import ThirdSection from "../components/ThirdSection";
 import FourthSection from "../components/FourthSection";
 import FAQSection from "../components/FAQSection";
+import HomeHero from "../components/HomeHero";
 
 export default function Home() {
   return (
     <div>
       <Header />
-      <Hero />
+      <HomeHero />
       <GrayBorder />
       <FirstSection />
       <GrayBorder />

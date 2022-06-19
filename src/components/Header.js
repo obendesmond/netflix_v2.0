@@ -17,7 +17,7 @@ export default function Header({ isDashboard }) {
           src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png"
         />
         <button
-          onClick={() => navigateTo(`${isDashboard ? "/" : "/dashboard"}`)}
+          onClick={() => navigateTo(`${isDashboard ? "/" : "/login"}`)}
           className="text-white bg-myRed py-[5px] px-5 rounded-md"
         >
           {isDashboard ? "Profile" : "Sign in"}
