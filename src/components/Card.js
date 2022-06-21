@@ -1,8 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import api from "../config/api_config";
 
 export default function Card({ movie }) {
+  const navigateTo = useNavigate();
   const {
+    id,
     title,
     original_title,
     vote_average,
@@ -11,7 +14,10 @@ export default function Card({ movie }) {
     release_date,
   } = movie;
   return (
-    <div className=" hover:scale-150 duration-100 cursor-pointer flex flex-col justify-center items-center">
+    <div
+      onClick={() => navigateTo(`/dashboard/${id}`)}
+      className="hover:scale-150 duration-100 cursor-pointer flex flex-col justify-center items-center"
+    >
       <img
         className=" w-[400px] md:w-[180px]"
         src={api.baseImgUrl + backdrop_path}
