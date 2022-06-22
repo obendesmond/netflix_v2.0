@@ -5,7 +5,7 @@ export default function ProfileSection() {
   const goTo = useNavigate();
 
   return (
-    <div className="container max-w-xl mx-auto p-5 ">
+    <div className="container max-w-xl mx-auto p-5 border-4">
       <div className="flex flex-row justify-between items-center">
         <p className="text-white text-4xl font-bold">Netflix: Edit Profile</p>
         <button

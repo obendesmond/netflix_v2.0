@@ -12,6 +12,8 @@ export default function Profile() {
       <Hero>
         <ProfileSection />
       </Hero>
+      <BlackSpace />
+      <BlackSpace />
     </>
   );
 }
