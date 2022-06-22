@@ -6,6 +6,7 @@ import BlackSpace from "./BlackSpace";
 export default function DashboardHero() {
   const { startPoint, endPoint, key, upComing, baseImgUrl } = api;
   const [bgImg, setBgImg] = useState();
+  const [title, setTitle] = useState();
 
   useEffect(() => {
     getUpComingMovie();
@@ -22,6 +23,7 @@ export default function DashboardHero() {
     const bg = baseImgUrl + path;
 
     setBgImg(bg);
+    setTitle(results[ran].title);
   };
 
   return (
@@ -44,6 +46,9 @@ export default function DashboardHero() {
             <br /> shows, and more.
           </h1>
           <p className="md:text-2xl">Watch anywhere. Cancel anytime.</p>
+          <button className="text-white bg-myRed py-[5px] px-5 rounded-md">
+            Watch Trailer -&gt; {title}
+          </button>
         </div>
       </div>
     </div>
